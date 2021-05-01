@@ -319,6 +319,7 @@ function! FSwitch(filename, precmd)
 
             if (strlen(bufname(s:fname))) > 0
                 execute 'buffer ' . s:fname
+                set buflisted
             else
                 execute 'edit ' . s:fname
             endif
